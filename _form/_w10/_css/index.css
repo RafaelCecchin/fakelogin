@@ -1,0 +1,303 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url(_fonts/SAGOEUI.TTF);
+}
+ 
+* {
+    margin: 0;
+    padding:0;
+}
+
+body {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+}
+
+h2 {
+    font-size: 14pt;
+    font-family: 'Segoe UI';
+    font-weight: 290;
+    margin: 7px 20px;
+}
+
+h3 {
+    font-size: 13pt;
+    font-family: 'Segoe UI';
+    font-weight: 500;
+    margin: -7px 5px 0px 5px;
+}
+
+h4 {
+    font-size: 13pt;
+    font-family: 'Segoe UI';
+    font-weight: 290;
+    margin: 7px 10px;
+    color: rgb(80,80,80);
+    text-align: center;
+}
+
+h5 {
+    font-size: 14pt;
+    font-family: 'Segoe UI';
+    font-weight: 290;
+    margin: 7px 10px;
+    color: white;
+    margin: auto;
+    cursor: default;
+}
+
+/* -------------------- */
+
+.left-right {
+    display: flex;
+    width: 100%;
+}
+
+    .left, .right {
+        width: 50%;
+        margin: 10px 10px;
+    }
+
+#body-content {
+    margin: auto;
+}
+
+    .backgrounds-content {
+        width: 100%;
+    }
+
+        .backgrounds-option {
+            width: 120px;
+            height: 82px;
+        }
+
+            #background-option-0 {
+                background: url(../_img/_background/0.jpg);
+            }
+
+            #background-option-1 {
+                background: url(../_img/_background/1.jpg);
+            }
+
+            #background-option-2 {
+                background: url(../_img/_background/2.jpg);
+            }
+
+            #background-option-3 {
+                background: url(../_img/_background/3.jpg);
+            }
+
+            #background-option-4 {
+                background: url(../_img/_background/4.jpg);
+            }
+
+                .background {
+                    display: block;
+                    margin: auto;
+                    transform: scale(1.4);
+                }
+
+    #options-number-users {
+        display: flex;
+        margin: auto;
+    }
+
+        #option-number-users {
+            display: flex;
+            margin-right: 50px;
+        }
+
+            .number-users {
+                transform: scale(1.6);
+            }
+
+    .user {
+        width: 100%;
+    }
+
+    #user1, #user2 {
+        display: none;
+    }
+        .user-content {
+            display: flex;
+        }
+
+            .user-photo-content {
+                display: flex;
+                background-color: rgba(0,0,0,0.3);
+                width: 75px;
+                height: 35px;
+                margin-right: 5px;
+            }
+
+            .user-photo-content:hover {
+                background-color: rgba(0,0,0,0.1);
+            }
+
+            .user-photo-content:active {
+                    background-color: rgba(255,255,255,0.4);
+            }
+
+            .photo {
+                display: none;
+            }
+
+            .name {
+                width: 170px;
+                font-size: 14pt;
+                font-family: 'Segoe UI';
+                font-weight: 290;
+                padding-left: 10px;
+            }
+
+    #timezone {
+        display: flex;
+        margin-top: 7px;
+        margin-bottom: 5px;
+        padding: 0px 10px 0px 5px;
+    }
+
+        #timezone-dropdown {
+            width: 170px;
+        }
+
+    #languages {
+        margin-top: -15px;
+    }
+
+        .dropdown {
+            width: 100%;
+            display: flex;
+            margin-bottom: -12px;
+        }
+
+            .select-dropdown {
+                margin: auto;
+                width: 120px;
+                height: 35px;
+                padding-left: 10px;
+                font-size: 14pt;
+                font-family: 'Segoe UI';
+                font-weight: 290;
+                padding-left: 5px;
+                padding-right: 10px;
+            }
+    
+    #battery-title {
+        display: flex;
+        margin: auto;
+        width: 120px;
+    }
+
+        #onoff-content {
+            width: 45px;
+            height: 14px;
+            background-color: rgb(255, 60, 60);
+            display: flex;
+            border-radius: 5px;
+            border: 1px solid rgba(0,0,0, 0.2);
+            margin: auto;
+        }
+
+            #on, #off {
+            
+                height: 100%;
+                border-radius: 5px;
+                display: flex;
+            }
+
+            #on {
+                width: 60%;
+                background-color: rgb(255, 60, 60);
+            }
+
+            #off {
+                width: 40%;
+                background-color: white;
+            }
+
+                #text-on, #text-off {
+                    margin: auto;
+                    color: white;
+                    font-size: 11pt;
+                    font-family: "Sagoe UI";
+                }
+
+                #text-on {
+                    margin-top: -2px;
+                }
+
+                #text-off {
+                    display: none;
+                }
+
+                .onoff {
+                    display: none;
+                }
+
+    #battery {
+        display: flex;
+    }
+
+        .battery-icons {
+            background-color: rgba(0,0,0,0.1);
+            margin: auto;
+            display: flex;
+            padding: 4px;
+            border-radius: 3px;
+        }
+
+            .battery-icons input {
+                margin: auto;
+            }
+
+    #net {
+        display: flex;
+    }
+
+        .net-icons {
+            background-color: rgba(0,0,0,0.1);
+            margin: auto;
+            display: flex;
+            padding: 4px;
+            border-radius: 3px;
+        }
+
+            .net-icons input {
+                margin: auto;
+            }
+
+    #submit-clear {
+        display: flex;
+        margin-top: 15px;
+        width: 100%;
+    }
+
+        #submit, #clear {
+            display: flex;
+            background-color: rgba(255,0,0,0.8);
+            width: 130px;
+            height: 40px;   
+            border-radius: 7px;
+            margin: auto;
+        }
+
+        #submit:hover, #clear:hover {
+            background-color: rgba(255,0,0,0.6);
+        }
+
+        #submit:active, #clear:active {
+            background-color: rgba(255,0,0,0.4);
+        }
+
+            #submit0, #clear0 {
+                display:none;
+            }

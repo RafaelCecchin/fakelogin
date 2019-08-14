@@ -1,0 +1,343 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url(_fonts/SAGOEUI.TTF);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+input {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+}
+
+body {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+/* --------------------- */
+
+#Page1 {
+    display: flex;
+    position: fixed;
+    z-index: 4;
+}
+
+    .left-right {
+        width: 50%;
+        height: 100%;
+        display: flex;
+    }
+
+        #date-time {
+            margin: auto auto 50px 25px;
+        }
+
+            h1 {
+                font-size: 80pt;
+                font-family: 'Segoe UI';
+                font-weight: 290;
+                color: white;
+                cursor: default;
+            }
+            
+            h2 {
+                margin-top: -20px;
+                font-size: 40pt;
+                font-family: 'Segoe UI';
+                font-weight: 290;
+                color: white;
+                white-space: nowrap;
+                cursor: default;
+            }
+
+        #icons-page1 {
+            margin: auto 30px 25px auto;
+        }
+
+            .minor-icon {
+                margin-left: 20px;
+            }
+
+#Page2 {
+    position: relative;
+    z-index: 3;
+}
+
+    #top, #bottom {
+        width: 100%;
+    }
+
+    #top {
+        height: 50%;
+        display: flex;
+        position: relative;
+        z-index: 1;
+    }
+
+        #user-data {
+            margin: auto auto -175px auto;
+            width: 400px;
+            height: 450px;
+        }
+
+            #photo, #name, #password, #loading, #forgot-password {
+                display: flex;
+                width: 100%;
+            }
+
+            #photo {
+                height: 50%;
+            }
+
+                #user-photo {
+                    margin: auto auto 0px auto;
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 100px;
+                }
+
+            #name {
+                height: 25%;
+            }
+
+                h3 {
+                    font-size: 35pt;
+                    font-family: 'Segoe UI';
+                    font-weight: 200;
+                    color: white;
+                    cursor: default;
+                    margin: auto;
+                    white-space: nowrap;
+                }
+
+            #password {
+                height: 25%;
+            }
+
+                #user-password-submit {
+                    margin: 0px auto auto auto;
+                    border: 2px solid rgba(255,255,255,0.3);
+                    display: flex;
+                }
+
+                #user-password-submit:hover {
+                    border: 2px solid rgba(255,255,255,0.8);
+                }
+
+                        #user-password {
+                            font-family: 'Segoe UI';
+                            border: none;
+                            border-color: none;
+                            width: 277px;
+                            height: 37px;
+                            padding-left: 10px;
+                            font-size: 12pt;
+                        }
+
+                        #button-show-password {
+                            display: none;
+                            width: 37px;
+                            height: 37px;    
+                            background: url(../_img/_icons/_page1/_others/eye0.png) no-repeat center center;
+                            background-color: white;
+                        }
+
+                        #button-show-password:hover {
+                            background: url(../_img/_icons/_page1/_others/eye1.png) no-repeat center center;
+                            background-color: white;
+                        }
+
+                        #button-show-password:active {
+                            background: url(../_img/_icons/_page1/_others/eye2.png) no-repeat center center;
+                            background-color: #5053ff;
+                        }
+
+                        #password-submit {
+                            width: 37px;
+                            height: 37px;
+                            background: url(../_img/_icons/_page1/_others/arrow-right.png) no-repeat center center ;
+                            background-color: rgba(80,80,80,0.4);
+                        }
+
+                        #button-submit:active {
+                            background-color: rgba(255,255,255,0.4);
+                        }
+            
+            #loading {
+                display: none;
+                height: 25%;
+                margin-left: -20px;
+            }
+
+                #loading-img {
+                    margin: 0px 0px auto auto;
+                    width: 70px;
+                    height: 40px;
+                }
+
+                #welcome {
+                    margin: 0px auto auto 0px;
+                    height: 40px;
+                    display: flex;
+                }
+
+                    h4 {
+                        font-size: 20pt;
+                        font-family: 'Segoe UI';
+                        font-weight: 200;
+                        color: white;
+                        cursor: default;
+                        margin: auto;
+                    }
+            
+            #forgot-password {
+                height: 25%;
+                display: none;
+            }
+
+                h5 {
+                    font-size: 13pt;
+                    font-family: 'Segoe UI';
+                    font-weight: 200;
+                    color: white;
+                    cursor: default;
+                    margin: auto auto auto 0px;
+                    text-align: center;
+                    width: 100%;
+                    height: 50px;
+                }
+
+                #button-ok-submit {
+                    width: 100%;
+                    display: flex;
+                }
+
+                    #ok-submit {
+                        background-color: rgba(255,255,255, 0.3);
+                        width: 130px;
+                        height: 39px;
+                        margin: auto auto 0px auto;
+                        font-size: 13pt;
+                        font-family: 'Segoe UI';
+                        font-weight: 500;
+                        color: white;
+                        cursor: default;
+                    }
+
+                    #ok-submit:hover {
+                        border: 2px solid rgba(255,255,255, 0.7);
+                    }
+
+                    #ok-submit:active {
+                        background-color: rgba(255,255,255, 0.7);
+                    }
+
+    #bottom {
+        height: 50%;
+        display: flex;
+        position: relative;
+        z-index: 0;
+    }
+
+        #user-select {
+            margin: auto auto 30px 30px;
+        }
+
+            .user-option {
+                display: flex;
+                padding: 5px 10px;
+            }
+
+            .user-option:hover {
+                background-color: rgba(255,255,255,0.3);
+            }
+
+            .user-option:active {
+                background-color: rgba(255,255,255,0.6);
+            }
+
+                .user-option-photo {
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 25px;
+                }
+
+                .user-option-name {
+                    height: 50px;
+                    display: flex;
+                }
+
+                    h6 {
+                        font-size: 15pt;
+                        font-family: 'Segoe UI';
+                        font-weight: 380;
+                        color: white;
+                        cursor: default;
+                        margin: auto auto auto 15px;
+                        white-space: nowrap;
+                    }
+        
+        #icons-page2 {
+            margin: auto 30px 30px auto;
+            display: flex;
+        }
+
+            .biggest-icon {
+                padding: 3px;
+                height: 40px;
+                width: 40px;
+            }
+
+            .biggest-icon:hover {
+                background-color: rgba(255,255,255,0.3);
+            }
+
+            .biggest-icon:active {
+                background-color: rgba(255,255,255,0.5);
+            }
+                        
+                .initials {
+                    width: 40px;
+                    height: 40px;
+                }
+
+                    .initials-content {
+                        height: 50%;
+                        width: 100%;
+                        display: flex;
+                    }
+
+                        #initials-content-top, #initials-content-bottom {
+                            margin: auto;
+                            font-family: 'Segoe UI';
+                            color: white;
+                        }
+
+                        #initials-content-top {
+                            font-weight: 450;
+                        }
+
+                        #initials-content-bottom {
+                            font-weight: 290;
+                            font-size: 11pt;
+                        }
+
+    iframe {
+        display: none;
+    }

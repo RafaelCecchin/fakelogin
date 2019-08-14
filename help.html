@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FakeLogin.net - Help the project!</title>
+        <meta charset="utf-8"/>
+		
+		<meta name="robots" content="noindex"/>
+		<meta name="googlebot" content="noindex"/>
+		<meta name="description" content="Help the project FakeLogin.net!"/>
+		
+		<script>
+			var viewport = document.createElement("meta");
+			viewport.setAttribute("name", "viewport");
+			if (screen.width < 650) {
+				viewport.setAttribute("content", "width=650");
+			} else {
+				viewport.setAttribute("content", "width=device-width, initial-scale=1");
+			}
+			document.head.appendChild(viewport);
+		</script>
+		
+		<link rel="shortcut icon" type="image/png" href="_img/_shortcut/shortcut.png"/>
+        <link rel="stylesheet" href="_css/help.min.css"/>
+        <script src="_javascript/javascript.min.js"></script>
+    </head>
+    <body>
+        <a href="./index.html" id="back">
+            <img id="back-img" src="_img/_icons/_others/back.png"/>
+        </a>
+        <form method="POST" action="./_email/email.php" enctype="multipart/form-data">
+            <div id="body">
+                <div id="body-left">
+                    <div id="body-left-content">
+                        <h1>Thanks</h1>
+                        <div id="thanks">
+                            <p>&emsp;I want to thank everyone who cooperated in some way for the development of my first web project. Especially my parents, the availability of equipment and my teachers and friends for the incentive to develop projects that add to my portfolio.</p>
+                        </div>
+                        <h1>Helped the project</h1>
+                        <table id="helpers">
+                            <tr>
+                                <td>
+
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div id="body-right">
+                    <div id="body-right-content">
+                        <h1>Help the project</h1>
+                        <div class="data">
+                            <div class="input-content"> 
+                                <div class="input-title">
+                                    <h2>Name:</h2>
+                                </div>
+                                <input class="input" name="name" id="name" type="text" maxlength="30" required/>
+                            </div>
+                        </div>
+                        <div class="data">
+                            <div class="input-content"> 
+                                <div class="input-title">
+                                    <h2>Nationality:</h2>
+                                </div>
+                                <input class="input" name="nationality" id="nationality" type="text" maxlength="20" required/>
+                            </div>
+                        </div>
+                        <div class="data">
+                            <div class="input-content"> 
+                                <div class="input-title">
+                                    <h2>E-mail:</h2>
+                                </div>
+                                <input class="input" name="email" id="email" type="email" maxlength="80" required/>
+                            </div>
+                        </div>
+                        <div class="data">
+                            <div class="input-content">
+                                <textarea name="translation" required>
+"yourlanguageHere": {              
+    "_language": "{Name of your language (example: Français)}",
+    
+    "_password": "Password",
+    "_welcome": "Welcome",
+    "_forgotpassword": "Incorrect password. Try again.",
+
+    "_dayName": {
+        "Sun": "sunday",
+        "Mon": "monday",
+        "Tue": "tuesday",
+        "Wed": "wednesday",
+        "Thu": "thursday",
+        "Fri": "friday",
+        "Sat": "saturday"
+    },
+    "_monName": {
+        "Jan": "january",
+        "Feb": "february",
+        "Mar": "march",
+        "Apr": "april",
+        "May": "may",
+        "Jun": "june",
+        "Jul": "july",
+        "Aug": "august",
+        "Sep": "september",
+        "Oct": "october",
+        "Nov": "november",
+        "Dec": "december"
+    },
+    "_hourFormat": "g:i A", // PHP format 
+    "_dateFormat": "dd, MM DD"  // dd = day name, MM = month and DD = day number
+},
+
+"yourkeyboardHere": {
+	"_keyboard": {Name of your keyboard (example: Français)},
+    "_initial0": "YKH",
+    "_initial1": "YK"
+}
+                                </textarea>
+                            </div>
+                        </div>
+                        <div class="left-right">
+                            <div class="left">
+                                <label id="contract">
+                                    <input name="contract" type="checkbox" required/><h3>I accept that my name appears among the project collaborators.</h3>
+                                </label>
+                            </div>
+                            <div class="right">
+                                <div id="submit-content">
+                                    <div id="submit" onclick="clickId('submit0');">
+                                        <h2>Submit</h2>
+                                        <input id="submit0" type="submit"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

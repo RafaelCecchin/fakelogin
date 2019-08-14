@@ -1,0 +1,91 @@
+{
+    "language": {
+        "english_us": {              
+            "_language": "English (US)",
+    
+            "_password": "Password",
+            "_welcome": "Welcome",
+            "_forgotpassword": "Incorrect password. Try again.",
+
+            "_dayName": {
+                "Sun": "sunday",
+                "Mon": "monday",
+                "Tue": "tuesday",
+                "Wed": "wednesday",
+                "Thu": "thursday",
+                "Fri": "friday",
+                "Sat": "saturday"
+            },
+            "_monName": {
+                "Jan": "january",
+                "Feb": "february",
+                "Mar": "march",
+                "Apr": "april",
+                "May": "may",
+                "Jun": "june",
+                "Jul": "july",
+                "Aug": "august",
+                "Sep": "september",
+                "Oct": "october",
+                "Nov": "november",
+                "Dec": "december"
+            },
+            "_hourFormat": "g:i A",
+            "_dateFormat": "dd, MM DD" 
+        },
+    
+        "portugues_br": {              
+            "_language": "Portugues (BR)",
+    
+            "_password": "Senha",
+            "_welcome": "Bem-vindo",
+            "_forgotpassword": "Senha incorreta. Tente Novamente.",
+
+            "_dayName": {
+                "Sun": "domingo",
+                "Mon": "segunda-feira",
+                "Tue": "terça-feira",
+                "Wed": "quarta-feira",
+                "Thu": "quinta-feira",
+                "Fri": "sexta-feira",
+                "Sat": "sábado"
+            },
+            "_monName": {
+                "Jan": "janeiro",
+                "Feb": "fevereiro",
+                "Mar": "março",
+                "Apr": "abril",
+                "May": "maio",
+                "Jun": "junho",
+                "Jul": "julho",
+                "Aug": "agosto",
+                "Sep": "setembro",
+                "Oct": "outubro",
+                "Nov": "novembro",
+                "Dec": "dezembro"
+            },
+            "_hourFormat": "H:i",
+            "_dateFormat": "dd, DD de MM" 
+        }
+    },
+
+    "keyboard": {
+        "english_us": {
+			"_keyboard": "English (US)",
+            "_initial0": "ENG",
+            "_initial1": "US"
+        },
+    
+        "portuguese_br0": {   
+			"_keyboard": "Portuguese (BR)",
+            "_initial0": "POR",
+            "_initial1": "PTB"
+        },
+
+        "portuguese_br1": {    
+			"_keyboard": "Portuguese (BR2)",
+            "_initial0": "POR",
+            "_initial1": "PTB2"
+        }
+    }
+}

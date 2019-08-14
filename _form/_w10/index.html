@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="robots" content="noindex, nofollow" />
+        <meta name="googlebot" content="noindex, nofollow" />
+        <script src="../../_javascript/javascript.js"></script>
+        <link rel="stylesheet" href="_css/index.css" />
+    </head>
+    <body onload="clickId('clear0')">
+        <div id="body-content">
+            <form method="POST" action="../../_os/_W10/index.php" enctype="multipart/form-data" target="_blank">
+                <h2>Background:</h2>
+                <table class="backgrounds-content">
+                    <tr>
+                        <td id="background-option-0" class="backgrounds-option" onclick="clickId('background0-0');">
+                            <input id="background0-0" class="background" name="background" type="radio" value="0" checked />
+                        </td>
+                        <td id="background-option-1" class="backgrounds-option" onclick="clickId('background0-1');">
+                            <input id="background0-1" class="background" name="background" type="radio" value="1" />
+                        </td>
+                        <td id="background-option-2" class="backgrounds-option" onclick="clickId('background0-2');">
+                            <input id="background0-2" class="background" name="background" type="radio" value="2" />
+                        </td>
+                        <td id="background-option-3" class="backgrounds-option" onclick="clickId('background0-3');">
+                            <input id="background0-3" class="background" name="background" type="radio" value="3" />
+                        </td>
+                        <td id="background-option-4" class="backgrounds-option" onclick="clickId('background0-4');">
+                            <input id="background0-4" class="background" name="background" type="radio" value="4" />
+                        </td>
+                    </tr>
+                </table>
+                <div class="left-right">
+                    <div class="left">
+                        <h2>Number of users:</h2>
+                        <div id="options-number-users">
+                            <div id="option-number-users">
+                                <input class="number-users" name="number_users" type="radio" value="0" checked
+                                    onclick="showUsers(0)" />
+                                <h3>1</h3>
+                            </div>
+                            <div id="option-number-users">
+                                <input class="number-users" name="number_users" type="radio" value="1"
+                                    onclick="showUsers(1)" />
+                                <h3>2</h3>
+                            </div>
+                            <div id="option-number-users">
+                                <input class="number-users" name="number_users" type="radio" value="2"
+                                    onclick="showUsers(2)" />
+                                <h3>3</h3>
+                            </div>
+                        </div>
+                        <div class="user" id="user0">
+                            <h2>User 1:</h2>
+                            <div class="user-content">
+                                <div class="user-photo-content" onclick="clickId('photo0');">
+                                    <h5>Photo</h5>
+                                    <input id="photo0" class="photo" type="file" name="photo0" />
+                                </div>
+                                <input class="name" type="text" placeholder="Name..." name="name0" maxlength="20" />
+                            </div>
+                        </div>
+                        <div class="user" id="user1">
+                            <h2>User 2:</h2>
+                            <div class="user-content">
+                                <div class="user-photo-content" onclick="clickId('photo1');">
+                                    <h5>Photo</h5>
+                                    <input id="photo1" class="photo" type="file" name="photo1" />
+                                </div>
+                                <input class="name" type="text" placeholder="Name..." name="name1" maxlength="20" />
+                            </div>
+                        </div>
+                        <div class="user" id="user2">
+                            <h2>User 3:</h2>
+                            <div class="user-content">
+                                <div class="user-photo-content" onclick="clickId('photo2');">
+                                    <h5>Photo</h5>
+                                    <input id="photo2" class="photo" type="file" name="photo2" />
+                                </div>
+                                <input class="name" type="text" placeholder="Name..." name="name2" maxlength="20" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="left-right" id="languages">
+                            <div class="left">
+                                <h4>Keyboard: </h4>
+                                <div class="dropdown">
+                                    <select class="select-dropdown" name="keyboard_language">
+                                        <option value="english_us">English (US)</option>
+                                        <option value="portuguese_br0">Portuguese (ABNT)</option>
+                                        <option value="portuguese_br1">Portuguese (ABNT2)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <h4>Language: </h4>
+                                <div class="dropdown">
+                                    <select class="select-dropdown" name="text_language">
+                                        <option value="english_us">English (US)</option>
+                                        <option value="portugues_br">Portuguese (BR)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="battery-title">
+                            <h4>Battery: </h4>
+                            <div id="onoff-content">
+                                <label id="on" onclick="changeOnOff('off'); clickId('battery-off');">
+                                    <span id="text-on">on</span>
+                                    <input class="onoff" id="battery-off" type="radio" value="0" name="battery-onoff" />
+                                </label>
+                                <label id="off" onclick="changeOnOff('on'); clickId('battery-on');">
+                                    <span id="text-off">off</span>
+                                    <input class="onoff" id="battery-on" type="radio" value="1" name="battery-onoff"
+                                        checked />
+                                </label>
+                            </div>
+                        </div>
+                        <div id="battery">
+                            <div class="battery-icons" onclick="clickId('battery2');">
+                                <input id="battery2" type="radio" name="battery" value="0" checked />
+                                <img src="_img/_icons/_battery/charging-battery.png" />
+                            </div>
+                            <div class="battery-icons" onclick="clickId('battery1');">
+                                <input id="battery1" type="radio" name="battery" value="1" />
+                                <img src="_img/_icons/_battery/charged-battery.png" />
+                            </div>
+                            <div class="battery-icons" onclick="clickId('battery3');">
+                                <input id="battery3" type="radio" name="battery" value="2" />
+                                <img src="_img/_icons/_battery/full-battery.png" />
+                            </div>
+                            <div class="battery-icons" onclick="clickId('battery0');">
+                                <input id="battery0" type="radio" name="battery" value="3" />
+                                <img src="_img/_icons/_battery/battery-almost-charged.png" />
+                            </div>
+                            <div class="battery-icons" onclick="clickId('battery4');">
+                                <input id="battery4" type="radio" name="battery" value="4" />
+                                <img src="_img/_icons/_battery/half-battery.png" />
+                            </div>
+                            <div class="battery-icons" onclick="clickId('battery5');">
+                                <input id="battery5" type="radio" name="battery" value="5" />
+                                <img src="_img/_icons/_battery/low-battery.png" />
+                            </div>
+                        </div>
+                        <h4>Internet: </h4>
+                        <div id="net">
+                            <div class="net-icons" onclick="clickId('net0');">
+                                <input id="net0" type="radio" name="net" value="0" checked />
+                                <img src="_img/_icons/_net/wireless-on.png" />
+                            </div>
+                            <div class="net-icons" onclick="clickId('net1');">
+                                <input id="net1" type="radio" name="net" value="1" />
+                                <img src="_img/_icons/_net/wireless-off.png" />
+                            </div>
+                            <div class="net-icons" onclick="clickId('net2');">
+                                <input id="net2" type="radio" name="net" value="2" />
+                                <img src="_img/_icons/_net/ethernet-on.png" />
+                            </div>
+                            <div class="net-icons" onclick="clickId('net3');">
+                                <input id="net3" type="radio" name="net" value="3" />
+                                <img src="_img/_icons/_net/ethernet-off.png" />
+                            </div>
+                        </div>
+                        <div id="timezone">
+                            <h4>Timezone:</h4>
+                            <div class="dropdown">
+                                <select class="select-dropdown" id="timezone-dropdown" name="timezone">
+                                    <option value="Etc/GMT+12">(GMT-12:00) International Date Line West</option>
+                                    <option value="Pacific/Midway">(GMT-11:00) Midway Island, Samoa</option>
+                                    <option value="Pacific/Honolulu">(GMT-10:00) Hawaii</option>
+                                    <option value="US/Alaska">(GMT-09:00) Alaska</option>
+                                    <option value="America/Los_Angeles">(GMT-08:00) Pacific Time (US & Canada)</option>
+                                    <option value="America/Tijuana">(GMT-08:00) Tijuana, Baja California</option>
+                                    <option value="US/Arizona">(GMT-07:00) Arizona</option>
+                                    <option value="America/Chihuahua">(GMT-07:00) Chihuahua, La Paz, Mazatlan</option>
+                                    <option value="US/Mountain">(GMT-07:00) Mountain Time (US & Canada)</option>
+                                    <option value="America/Managua">(GMT-06:00) Central America</option>
+                                    <option value="US/Central">(GMT-06:00) Central Time (US & Canada)</option>
+                                    <option value="America/Mexico_City">(GMT-06:00) Guadalajara, Mexico City, Monterrey</option>
+                                    <option value="Canada/Saskatchewan">(GMT-06:00) Saskatchewan</option>
+                                    <option value="America/Bogota">(GMT-05:00) Bogota, Lima, Quito, Rio Branco</option>
+                                    <option value="US/Eastern">(GMT-05:00) Eastern Time (US & Canada)</option>
+                                    <option value="US/East-Indiana">(GMT-05:00) Indiana (East)</option>
+                                    <option value="Canada/Atlantic">(GMT-04:00) Atlantic Time (Canada)</option>
+                                    <option value="America/Caracas">(GMT-04:00) Caracas, La Paz</option>
+                                    <option value="America/Manaus">(GMT-04:00) Manaus</option>
+                                    <option value="America/Santiago">(GMT-04:00) Santiago</option>
+                                    <option value="Canada/Newfoundland">(GMT-03:30) Newfoundland</option>
+                                    <option value="America/Sao_Paulo">(GMT-03:00) Brasilia</option>
+                                    <option value="America/Argentina/Buenos_Aires">(GMT-03:00) Buenos Aires, Georgetown</option>
+                                    <option value="America/Godthab">(GMT-03:00) Greenland</option>
+                                    <option value="America/Montevideo">(GMT-03:00) Montevideo</option>
+                                    <option value="America/Noronha">(GMT-02:00) Mid-Atlantic</option>
+                                    <option value="Atlantic/Cape_Verde">(GMT-01:00) Cape Verde Is.</option>
+                                    <option value="Atlantic/Azores">(GMT-01:00) Azores</option>
+                                    <option value="Africa/Casablanca">(GMT+00:00) Casablanca, Monrovia, Reykjavik</option>
+                                    <option value="Etc/Greenwich">(GMT+00:00) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London</option>
+                                    <option value="Europe/Amsterdam">(GMT+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna</option>
+                                    <option value="Europe/Belgrade">(GMT+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague</option>
+                                    <option value="Europe/Brussels">(GMT+01:00) Brussels, Copenhagen, Madrid, Paris</option>
+                                    <option value="Europe/Sarajevo">(GMT+01:00) Sarajevo, Skopje, Warsaw, Zagreb</option>
+                                    <option value="Africa/Lagos">(GMT+01:00) West Central Africa</option>
+                                    <option value="Asia/Amman">(GMT+02:00) Amman</option>
+                                    <option value="Europe/Athens">(GMT+02:00) Athens, Bucharest, Istanbul</option>
+                                    <option value="Asia/Beirut">(GMT+02:00) Beirut</option>
+                                    <option value="Africa/Cairo">(GMT+02:00) Cairo</option>
+                                    <option value="Africa/Harare">(GMT+02:00) Harare, Pretoria</option>
+                                    <option value="Europe/Helsinki">(GMT+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius</option>
+                                    <option value="Asia/Jerusalem">(GMT+02:00) Jerusalem</option>
+                                    <option value="Europe/Minsk">(GMT+02:00) Minsk</option>
+                                    <option value="Africa/Windhoek">(GMT+02:00) Windhoek</option>
+                                    <option value="Asia/Kuwait">(GMT+03:00) Kuwait, Riyadh, Baghdad</option>
+                                    <option value="Europe/Moscow">(GMT+03:00) Moscow, St. Petersburg, Volgograd</option>
+                                    <option value="Africa/Nairobi">(GMT+03:00) Nairobi</option>
+                                    <option value="Asia/Tbilisi">(GMT+03:00) Tbilisi</option>
+                                    <option value="Asia/Tehran">(GMT+03:30) Tehran</option>
+                                    <option value="Asia/Muscat">(GMT+04:00) Abu Dhabi, Muscat</option>
+                                    <option value="Asia/Baku">(GMT+04:00) Baku</option>
+                                    <option value="Asia/Yerevan">(GMT+04:00) Yerevan</option>
+                                    <option value="Asia/Kabul">(GMT+04:30) Kabul</option>
+                                    <option value="Asia/Yekaterinburg">(GMT+05:00) Yekaterinburg</option>
+                                    <option value="Asia/Karachi">(GMT+05:00) Islamabad, Karachi, Tashkent</option>
+                                    <option value="Asia/Calcutta">(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi</option>
+                                    <option value="Asia/Calcutta">(GMT+05:30) Sri Jayawardenapura</option>
+                                    <option value="Asia/Katmandu">(GMT+05:45) Kathmandu</option>
+                                    <option value="Asia/Almaty">(GMT+06:00) Almaty, Novosibirsk</option>
+                                    <option value="Asia/Dhaka">(GMT+06:00) Astana, Dhaka</option>
+                                    <option value="Asia/Rangoon">(GMT+06:30) Yangon (Rangoon)</option>
+                                    <option value="Asia/Bangkok">(GMT+07:00) Bangkok, Hanoi, Jakarta</option>
+                                    <option value="Asia/Krasnoyarsk">(GMT+07:00) Krasnoyarsk</option>
+                                    <option value="Asia/Hong_Kong">(GMT+08:00) Beijing, Chongqing, Hong Kong, Urumqi</option>
+                                    <option value="Asia/Kuala_Lumpur">(GMT+08:00) Kuala Lumpur, Singapore</option>
+                                    <option value="Asia/Irkutsk">(GMT+08:00) Irkutsk, Ulaan Bataar</option>
+                                    <option value="Australia/Perth">(GMT+08:00) Perth</option>
+                                    <option value="Asia/Taipei">(GMT+08:00) Taipei</option>
+                                    <option value="Asia/Tokyo">(GMT+09:00) Osaka, Sapporo, Tokyo</option>
+                                    <option value="Asia/Seoul">(GMT+09:00) Seoul</option>
+                                    <option value="Asia/Yakutsk">(GMT+09:00) Yakutsk</option>
+                                    <option value="Australia/Adelaide">(GMT+09:30) Adelaide</option>
+                                    <option value="Australia/Darwin">(GMT+09:30) Darwin</option>
+                                    <option value="Australia/Brisbane">(GMT+10:00) Brisbane</option>
+                                    <option value="Australia/Canberra">(GMT+10:00) Canberra, Melbourne, Sydney</option>
+                                    <option value="Australia/Hobart">(GMT+10:00) Hobart</option>
+                                    <option value="Pacific/Guam">(GMT+10:00) Guam, Port Moresby</option>
+                                    <option value="Asia/Vladivostok">(GMT+10:00) Vladivostok</option>
+                                    <option value="Asia/Magadan">(GMT+11:00) Magadan, Solomon Is., New Caledonia</option>
+                                    <option value="Pacific/Auckland">(GMT+12:00) Auckland, Wellington</option>
+                                    <option value="Pacific/Fiji">(GMT+12:00) Fiji, Kamchatka, Marshall Is.</option>
+                                    <option value="Pacific/Tongatapu">(GMT+13:00) Nuku'alofa</option>z
+                                </select>
+                            </div>
+                        </div>
+                        <div id="submit-clear">
+                            <div id="clear" onclick="clickId('clear0'); showUsers(0); changeOnOff('on');">
+                                <h5>Clear</h5>
+                                <input id="clear0" type="reset" />
+                            </div>
+                            <div id="submit" onclick="clickId('submit0');">
+                                <h5>Submit</h5>
+                                <input id="submit0" type="submit" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
