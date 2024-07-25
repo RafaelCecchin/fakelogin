@@ -1,0 +1,17 @@
+{
+    "name": "rafael/fakelogin",
+    "autoload": {
+        "psr-4": {
+            "Rafael\\Fakelogin\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rafael Cecchin",
+            "email": "contatorafaelcecchin@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

@@ -4,7 +4,7 @@ Bem-vindo ao Fake Login Screen! Este projeto foi criado em 2016, quando eu estav
 
 Você pode executar o projeto com docker.
 ```bash
-docker run --rm -it -p 80:80 -v $(pwd):/var/www/html php:7.1-apache
+docker run --rm -it -p 80:80 -v $(pwd):/var/www/html php:7.2-apache
 ```
 
 ## Funcionalidades ✨
