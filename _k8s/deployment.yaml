@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fakelogin
+  labels:
+    app: fakelogin
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: fakelogin
+  template:
+    metadata:
+      labels:
+        app: fakelogin
+    spec:
+      containers:
+        - name: fakelogin
+          image: rafaelcecchin/fakelogin
+          volumeMounts:
+            - mountPath: /var/www/html/_env
+              name: config
+      volumes:
+        - name: config
+          configMap:
+            name: fakelogin-env

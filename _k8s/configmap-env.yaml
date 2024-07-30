@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: fakelogin-env
+data:
+  .env: |
+    APP_NAME='Fake Login Screen'

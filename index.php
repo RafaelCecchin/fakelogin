@@ -3,7 +3,7 @@
 
     require __DIR__.'/vendor/autoload.php';
 
-    $dotenv = Dotenv::createImmutable(dirname(__FILE__, 1).'/');
+    $dotenv = Dotenv::createImmutable(dirname(__FILE__, 1).'/_env/');
     $dotenv->load();
 
     $app_name = $_ENV['APP_NAME'];
