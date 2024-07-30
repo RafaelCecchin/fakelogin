@@ -16,7 +16,17 @@ spec:
     spec:
       containers:
         - name: fakelogin
-          image: rafaelcecchin/fakelogin
+          image: rafaelcecchin/fakelogin:latest
+
+          livenessProbe:
+            httpGet:
+              path: /healthz.php
+              port: 80
+            periodSeconds: 5
+            failureThreshold: 3
+            timeoutSeconds: 1
+            successThreshold: 1
+
           volumeMounts:
             - mountPath: /var/www/html/_env
               name: config
