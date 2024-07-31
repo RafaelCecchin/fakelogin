@@ -18,13 +18,25 @@ spec:
         - name: fakelogin
           image: rafaelcecchin/fakelogin
 
+          # indica a partir da que momento usar readinessProbe e livenessProbe
+          startupProbe:
+            httpGet:
+              path: /healthz.php
+              port: 80
+            periodSeconds: 3
+            failureThreshold: 20
+
+          # útil para o inicio da aplicação
+          # útil para direcionar tráfego
           readinessProbe:
             httpGet:
               path: /healthz.php
               port: 80
             periodSeconds: 3
             failureThreshold: 1
+            # initialDelaySeconds: 11
 
+          # útil para o decorrer da aplicação
           # livenessProbe:
           #   httpGet:
           #     path: /healthz.php
