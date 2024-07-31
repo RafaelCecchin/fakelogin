@@ -26,12 +26,12 @@
                 $seconds += $days * 86400; // 86400 seconds in a day
             }
 
-            if ($seconds < 20) {
-                http_response_code(200);
-                echo 'ok';
-            } else {
+            if ($seconds < 10) {
                 http_response_code(500);
                 echo 'error';
+            } else {
+                http_response_code(200);
+                echo 'ok';
             }
             
             echo "<br/> Tempo de execução do Apache em segundos: " . $seconds;
