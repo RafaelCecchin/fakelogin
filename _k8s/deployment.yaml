@@ -34,7 +34,15 @@ spec:
           volumeMounts:
             - mountPath: /var/www/html/_env
               name: config
+
+            - mountPath: /var/www/html/src
+              name: fakelogin-volume
+
       volumes:
+        - name: fakelogin-volume
+          persistentVolumeClaim:
+            claimName: fakelogin-pvc
+
         - name: config
           configMap:
             name: fakelogin-env
