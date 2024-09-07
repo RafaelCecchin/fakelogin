@@ -1,3 +1,4 @@
+
 apiVersion: autoscaling/v1
 kind: HorizontalPodAutoscaler
 metadata:
@@ -7,6 +8,6 @@ spec:
     apiVersion: apps/v1
     name: fakelogin
     kind: Deployment
-  minReplicas: 2
-  maxReplicas: 25
+  minReplicas: 1
+  maxReplicas: 4
   targetCPUUtilizationPercentage: 75
